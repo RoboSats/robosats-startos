@@ -10,7 +10,7 @@ all: verify
 verify: $(PKG_ID).s9pk
 	embassy-sdk verify s9pk $(PKG_ID).s9pk
 
-install:
+install: all
 	embassy-cli package install $(PKG_ID).s9pk
 
 clean:
@@ -24,5 +24,5 @@ scripts/embassy.js: $(TS_FILES)
 image.tar: Dockerfile docker_entrypoint.sh
 	docker buildx build --tag start9/$(PKG_ID)/main:$(PKG_VERSION) --platform=linux/arm64 -o type=docker,dest=image.tar .
 
-$(PKG_ID).s9pk: manifest.yaml instructions.md icon.png LICENSE scripts/embassy.js image.tar
+$(PKG_ID).s9pk: check-web.sh manifest.yaml instructions.md icon.png LICENSE scripts/embassy.js image.tar
 	embassy-sdk pack
