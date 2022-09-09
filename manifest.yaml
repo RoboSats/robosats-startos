@@ -87,10 +87,6 @@ interfaces:
       port-mapping:
         80: "12596"
     # Port mappings are from the external port to the internal container port
-    lan-config:
-      443:
-        ssl: true
-        internal: 12596
     # Denotes if the service has a user interface to display
     ui: true
     # Denotes the protocol specifications used by this interface
@@ -98,6 +94,9 @@ interfaces:
       - tcp
       - http
 dependencies: {}
+alerts:
+  start: |
+    ATTENTION: You must have a Tor supported browser to use this service. 
 # Specifies how backups should be run for this service. The default EmbassyOS provided option is to use the duplicity backup library on a system image (compat)
 backup:
   create:
