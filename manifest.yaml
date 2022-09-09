@@ -85,7 +85,7 @@ interfaces:
     tor-config:
     # Port mappings are from the external port to the internal container port
       port-mapping:
-        12596: "12596"
+        80: "12596"
         9000: "9000"
         81: "81"
     # Port mappings are from the external port to the internal container port
