@@ -1,6 +1,6 @@
-# Wrapper for hello-world
+# Wrapper for RoboSats
 
-`hello-world` is a simple, minimal project to serve as a template for creating an app for the Embassy. Learn more about service packaging in [Developer Docs](https://start9.com/latest/developer-docs/).
+RoboSats is a simple and private bitcoin exchange
 
 ## Dependencies
 
@@ -54,15 +54,15 @@ cd embassy-os/backend/
 ./install-sdk.sh
 embassy-sdk init
 ```
-Now you are ready to build your **hello-world** service
+Now you are ready to build your **robosats** service
 
 ## Cloning
 
 Clone the project locally. 
 
 ```
-git clone https://github.com/Start9Labs/hello-world-wrapper.git
-cd hello-world-wrapper
+git clone https://github.com/Start9Labs/robosats-wrapper.git
+cd robosats-wrapper
 ```
 
 ## Building
@@ -81,9 +81,9 @@ Run the following commands to determine successful install:
 ```
 embassy-cli auth login
 #Enter your embassy password
-embassy-cli --host https://embassy-q1w2e3r4.local package install hello-world.s9pk
+embassy-cli --host https://embassy-q1w2e3r4.local package install robosats.s9pk
 ```
-**Tip:** You can also install the hello-world.s9pk using **Sideload Service** under the **Embassy > SETTINGS** section.
+**Tip:** You can also install the robosats.s9pk using **Sideload Service** under the **Embassy > SETTINGS** section.
 ## Verify Install
 
 Go to your Embassy Services page, select **Hello World**, configure and start the service.

@@ -1,3 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-exec tini hello-world
+set -ea
+
+echo "Starting RoboSats..."
+exec tini -s ./robosats-client.sh 
