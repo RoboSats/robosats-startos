@@ -86,19 +86,11 @@ interfaces:
     # Port mappings are from the external port to the internal container port
       port-mapping:
         80: "12596"
-        9000: "9000"
-        81: "81"
     # Port mappings are from the external port to the internal container port
     lan-config:
       443:
         ssl: true
         internal: 12596
-      9000:
-        ssl: true
-        internal: 9000  
-      81:
-        ssl: true
-        internal: 81
     # Denotes if the service has a user interface to display
     ui: true
     # Denotes the protocol specifications used by this interface
