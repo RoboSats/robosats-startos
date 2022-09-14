@@ -23,8 +23,8 @@ export const getConfig: T.ExpectedExports.getConfig = compat.getConfig({
     },
     "rs-hash": {
         "type": "string",
-        "name": "Robosats Unique Hash",
-        "description": "TBD",
+        "name": "Robosats Unique Token",
+        "description": "This is just a place that you can store your unique token if you choose.  This is the nym identity that is randomly generated at boot for you on each startup.",
         "nullable": true,
         "copyable": true,
         "masked": false,
