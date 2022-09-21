@@ -96,7 +96,7 @@ interfaces:
 dependencies: {}
 alerts:
   start: |
-    ATTENTION: You must have a Tor supported browser to use this service. 
+    ATTENTION: Your browser must have Tor support to use this service.
 # Specifies how backups should be run for this service. The default EmbassyOS provided option is to use the duplicity backup library on a system image (compat)
 backup:
   create:
