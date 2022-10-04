@@ -67,7 +67,7 @@ cd robosats-wrapper
 
 ## Building
 
-To build the **Hello World** service, run the following command:
+To build the service, run the following command:
 
 ```
 make
@@ -86,6 +86,6 @@ embassy-cli --host https://embassy-q1w2e3r4.local package install robosats.s9pk
 **Tip:** You can also install the robosats.s9pk using **Sideload Service** under the **Embassy > SETTINGS** section.
 ## Verify Install
 
-Go to your Embassy Services page, select **Hello World**, configure and start the service.
+Go to your Embassy Services page, select RoboSats, configure and start the service.
 
 **Done!** 
