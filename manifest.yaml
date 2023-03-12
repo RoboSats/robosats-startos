@@ -1,23 +1,12 @@
-# Example written in yaml (toml and json are also acceptable)
-
-# The package identifier used by the OS. This must be unique amongst all other known packages
 id: robosats 
- # A human readable service title
 title: "RoboSats"
-# Service version - accepts up to four digits, where the last confirms to revisions necessary for EmbassyOS - see documentation: https://github.com/Start9Labs/emver-rs. This value will change with each release of the service. 
-version: 0.4.0
-# Release notes for the update - can be a string, paragraph or URL
+version: 0.4.1
 release-notes: |
   * Updated to v0.4.0-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.4.0-alpha)
-# The type of license for the project. Include the LICENSE in the root of the project directory. A license is required for a Start9 package.
 license: mit
-# The Start9 wrapper repository URL for the package. This repo contains the manifest file (this), any scripts necessary for configuration, backups, actions, or health checks (more below). This key must exist. But could be embedded into the source repository. 
 wrapper-repo: "https://github.com/Start9Labs/robosats-wrapper"
-# The original project repository URL. There is no upstream repo in this example
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
-# URL to the support site / channel for the project. This key can be omitted if none exists, or it can link to the original project repository issues.
 support-site: "https://github.com/Reckless-Satoshi/robosats/issues"
-# URL to the marketing site for the project. This key can be omitted if none exists, or it can link to the original project repository. 
 marketing-site: "https://learn.robosats.com/"
 # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
 build: ["make"]
