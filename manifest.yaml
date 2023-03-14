@@ -1,10 +1,10 @@
 id: robosats 
 title: "RoboSats"
-version: 0.4.1
+version: 0.4.1.1
 release-notes: |
-  * Updated to v0.4.0-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.4.0-alpha)
+  * Updated to v0.4.1-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.4.1-alpha)
 license: mit
-wrapper-repo: "https://github.com/Start9Labs/robosats-wrapper"
+wrapper-repo: "https://github.com/kn0wmad/robosats-wrapper"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
 support-site: "https://github.com/Reckless-Satoshi/robosats/issues"
 marketing-site: "https://learn.robosats.com/"
@@ -44,8 +44,8 @@ config:
     type: script
   set:
     type: script
-properties: 
-  type: script
+# properties: 
+#   type: script
 # This denotes any data, asset, or pointer volumes that should be connected when the "docker run" command is invoked
 volumes:
   # This is the image where files from the project asset directory will go
