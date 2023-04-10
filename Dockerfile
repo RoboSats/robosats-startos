@@ -1,4 +1,4 @@
-FROM recksato/robosats-client:v0.4.1-alpha
+FROM recksato/robosats-client:v0.4.3-alpha
 RUN apt-get update && apt-get install wget curl sudo bash tini -y
 RUN wget https://github.com/mikefarah/yq/releases/download/v4.6.3/yq_linux_amd64.tar.gz -O - |\
       tar xz && mv yq_linux_amd64 /usr/bin/yq
