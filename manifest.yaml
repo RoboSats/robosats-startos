@@ -8,6 +8,7 @@ wrapper-repo: "https://github.com/kn0wmad/robosats-wrapper"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
 support-site: "https://github.com/Reckless-Satoshi/robosats/issues"
 marketing-site: "https://learn.robosats.com/"
+donation-url: "https://learn.robosats.com/contribute/donate/"
 # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
 build: ["make"]
 # Human readable descriptors for the service. These are used throughout the EmbassyOS user interface, primarily in the marketplace.
