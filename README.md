@@ -31,11 +31,12 @@ docker run --privileged --rm linuxkit/binfmt:v0.8
 ```
 4. Install yq
 ```
-sudo snap install yq
+wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY}.tar.gz -O - |\
+  tar xz && mv ${BINARY} /usr/bin/yq
 ```
 5. Install deno
 ```
-sudo snap install deno
+cargo install deno
 ```
 6. Install essentials build packages
 ```
