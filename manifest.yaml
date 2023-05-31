@@ -1,9 +1,9 @@
 id: robosats 
 title: "RoboSats"
-version: 0.5.0
+version: 0.5.1
 release-notes: |
-  * Updated to v0.5.0-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.5.0-alpha)
-  * Updated build instructions in README
+  * Updated to v0.5.1-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.5.1-alpha)
+  * Updated to StartOS references
 license: mit
 wrapper-repo: "https://github.com/kn0wmad/robosats-wrapper"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
@@ -12,7 +12,7 @@ marketing-site: "https://learn.robosats.com/"
 donation-url: "https://learn.robosats.com/contribute/donate/"
 # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
 build: ["make"]
-# Human readable descriptors for the service. These are used throughout the EmbassyOS user interface, primarily in the marketplace.
+# Human readable descriptors for the service. These are used throughout the StartOS user interface, primarily in the marketplace.
 description:
   # This is the first description visible to the user in the marketplace.
   short: A simple and private bitcoin exchange
