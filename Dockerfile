@@ -1,7 +1,6 @@
-FROM recksato/robosats-client:v0.5.0-alpha
-RUN apt-get update && apt-get install wget curl sudo bash tini -y
-RUN wget https://github.com/mikefarah/yq/releases/download/v4.6.3/yq_linux_amd64.tar.gz -O - |\
-      tar xz && mv yq_linux_amd64 /usr/bin/yq
+FROM recksato/robosats-client:v0.5.1-alpha
+RUN apk add bash curl sudo tini wget yq; \
+    rm -f /var/cache/apk/*
 
 ENV APP_HOST robosats.embassy
 ENV APP_PORT 12596
