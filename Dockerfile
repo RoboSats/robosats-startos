@@ -1,4 +1,4 @@
-FROM recksato/robosats-client:v0.5.1-alpha
+FROM recksato/robosats-client:v0.5.2-alpha
 RUN apk add bash curl sudo tini wget yq; \
     rm -f /var/cache/apk/*
 

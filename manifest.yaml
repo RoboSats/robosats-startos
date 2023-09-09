@@ -1,9 +1,8 @@
 id: robosats 
 title: "RoboSats"
-version: 0.5.1
+version: 0.5.2
 release-notes: |
-  * Updated to v0.5.1-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.5.1-alpha)
-  * Updated to StartOS references
+  * Updated to v0.5.2-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.5.2-alpha)
 license: mit
 wrapper-repo: "https://github.com/kn0wmad/robosats-wrapper"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
