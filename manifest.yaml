@@ -1,8 +1,10 @@
 id: robosats 
 title: "RoboSats"
-version: 0.5.2
+version: 0.5.3
 release-notes: |
-  * Updated to v0.5.2-alpha [Release Notes](https://github.com/Reckless-Satoshi/robosats/releases/tag/v0.5.2-alpha)
+  * Updated to v0.5.3-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.5.3-alpha)
+  * IMPORTANT: Versions previous to v0.5.1 will no longer be compatible
+  * Remove old naming conventions
 license: mit
 wrapper-repo: "https://github.com/kn0wmad/robosats-wrapper"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
@@ -59,7 +61,7 @@ interfaces:
     # A human readable name for display in the UI
     name: User Interface
     # A descriptive description of what the interface does
-    description: A simple user interface that is expected to display the text "Hello Word"
+    description: Your RoboSats Tor Hidden Service address
     tor-config:
     # Port mappings are from the external port to the internal container port
       port-mapping:

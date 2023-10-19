@@ -1,5 +1,5 @@
 # Wrapper for RoboSats
-RoboSats is a simple and private bitcoin exchange
+A simple and private Lightning P2P exchange you can use directly from StartOS.
 
 ## Dependencies
 - [docker](https://docs.docker.com/get-docker)
@@ -7,7 +7,7 @@ RoboSats is a simple and private bitcoin exchange
 - [yq](https://mikefarah.gitbook.io/yq)
 - [deno](https://deno.land/)
 - [make](https://www.gnu.org/software/make/)
-- [embassy-sdk](https://github.com/Start9Labs/start-os/tree/master/backend)
+- [start-sdk](https://github.com/Start9Labs/start-os/tree/master/backend)
 
 ## Build enviroment
 Prepare your StartOS build enviroment. In this example we are using Ubuntu 20.04.
@@ -46,12 +46,12 @@ curl https://sh.rustup.rs -sSf | sh
 # Choose nr 1 (default install)
 source $HOME/.cargo/env
 ```
-8. Build and install embassy-sdk
+8. Build and install start-sdk
 ```
 cd ~/ && git clone --recursive https://github.com/Start9Labs/start-os.git
 cd start-os/backend/
 ./install-sdk.sh
-embassy-sdk init
+start-sdk init
 ```
 Now you are ready to build your **robosats** service
 
@@ -75,9 +75,9 @@ Run the following commands to determine successful install:
 > :information_source: Change <SERVER-NAME>.local to your Start9 server address
 
 ```
-embassy-cli auth login
+start-cli auth login
 #Enter your Start9 server master password
-embassy-cli --host https://<SERVER-NAME>.local package install robosats.s9pk
+start-cli --host https://<SERVER-NAME>.local package install robosats.s9pk
 ```
 **Tip:** You can also install the robosats.s9pk using **Sideload Service** under the **System > Settings** section.
 ## Verify Install
