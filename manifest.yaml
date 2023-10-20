@@ -58,12 +58,15 @@ interfaces:
     # A human readable name for display in the UI
     name: User Interface
     # A descriptive description of what the interface does
-    description: Your RoboSats Tor Hidden Service address
+    description: Your RoboSats UI addresses
     tor-config:
     # Port mappings are from the external port to the internal container port
       port-mapping:
         80: "12596"
-    # Port mappings are from the external port to the internal container port
+    lan-config:
+        443: 
+          ssl: true
+          internal: 12596
     # Denotes if the service has a user interface to display
     ui: true
     # Denotes the protocol specifications used by this interface
@@ -71,9 +74,7 @@ interfaces:
       - tcp
       - http
 dependencies: {}
-alerts:
-  start: |
-    ATTENTION: Your browser must have Tor support to use this service.
+# alerts:
 # Specifies how backups should be run for this service. The default EmbassyOS provided option is to use the duplicity backup library on a system image (compat)
 backup:
   create:
