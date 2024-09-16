@@ -1,12 +1,13 @@
-id: robosats 
+id: robosats
 title: "RoboSats"
-version: 0.6.0
+version: 0.7.0.1
 release-notes: |
-  * Updated to v0.6.0-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.6.0-alpha)
+  * Updated to RoboSats v0.7.0-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.7.0-alpha)(client+[patch 1ba8183](https://github.com/RoboSats/robosats/issues/1373#issuecomment-2345859784))
+  * Add .local LAN interface
 license: mit
-wrapper-repo: "https://github.com/kn0wmad/robosats-wrapper"
+wrapper-repo: "https://github.com/RoboSats/robosats-startos"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
-support-site: "https://github.com/Reckless-Satoshi/robosats/issues"
+support-site: "https://github.com/RoboSats/robosats-startos/issues"
 marketing-site: "https://learn.robosats.com/"
 donation-url: "https://learn.robosats.com/contribute/donate/"
 # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
@@ -18,7 +19,7 @@ description:
   # This description will display with additional details in the service's individual marketplace page
   long: |
     RoboSats is a simple and private way to exchange bitcoin for national currencies. Robosats simplifies the peer-to-peer user experience and uses lightning hold invoices to minimize custody and trust requirements. The deterministically generated avatars help users stick to best privacy practices.
-# These assets are static files necessary for packaging the service for Start9 (into an s9pk). Each value is a path to the specified asset. If an asset is missing from this list, or otherwise denoted, it will be defaulted to the values denoted below. 
+# These assets are static files necessary for packaging the service for Start9 (into an s9pk). Each value is a path to the specified asset. If an asset is missing from this list, or otherwise denoted, it will be defaulted to the values denoted below.
 assets:
   # Default = LICENSE.md
   license: LICENSE
@@ -34,14 +35,14 @@ main:
   args: []
   mounts:
     main: /root
-# Health checks 
-health-checks: 
+# Health checks
+health-checks:
   web-ui:
     name: Web Interface
     success-message: The RoboSats UI is ready
     type: script
 config: ~
-# properties: 
+# properties:
 #   type: script
 # This denotes any data, asset, or pointer volumes that should be connected when the "docker run" command is invoked
 volumes:
@@ -57,9 +58,13 @@ interfaces:
     # A descriptive description of what the interface does
     description: Your RoboSats Tor Hidden Service address
     tor-config:
-    # Port mappings are from the external port to the internal container port
+      # Port mappings are from the external port to the internal container port
       port-mapping:
         80: "12596"
+    lan-config:
+      443:
+        ssl: true
+        internal: 12596
     # Port mappings are from the external port to the internal container port
     # Denotes if the service has a user interface to display
     ui: true
@@ -78,10 +83,10 @@ backup:
     type: docker
     # The docker image to use. In this case, a pre-loaded system image called compat
     image: compat
-    # Required if the action uses a system image. The default value is false. 
-    system: true 
+    # Required if the action uses a system image. The default value is false.
+    system: true
     # The executable to run the command to begin the backup create process
-    entrypoint: compat 
+    entrypoint: compat
     # Arguments to pass into the entrypoint executable. In this example, the full command run will be: `compat duplicity hello-world /mnt/backup /root/data`
     args:
       - duplicity
@@ -90,9 +95,9 @@ backup:
       # For duplicity, the backup mount point needs to be something other than `/root`, so we default to `/root/data`
       - /root/data
     mounts:
-      # BACKUP is the default volume that is used for backups. This is whatever backup drive is mounted to the device, or a network filesystem.  
+      # BACKUP is the default volume that is used for backups. This is whatever backup drive is mounted to the device, or a network filesystem.
       # The value here donates where the mount point will be. The backup drive is mounted to this location.
-      BACKUP: "/mnt/backup" 
+      BACKUP: "/mnt/backup"
       main: "/root/data"
   # The action to execute the backup restore functionality. Details for the keys below are the same as above.
   restore:

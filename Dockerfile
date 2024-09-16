@@ -1,4 +1,4 @@
-FROM recksato/robosats-client:v0.6.0-alpha
+FROM recksato/robosats-client:1ba8183
 RUN apk add bash curl sudo tini wget yq; \
     rm -f /var/cache/apk/*
 
@@ -10,3 +10,4 @@ ENV TOR_PROXY_PORT 9050
 ADD ./docker_entrypoint.sh /usr/local/bin/docker_entrypoint.sh
 RUN chmod a+x /usr/local/bin/*.sh
 RUN chmod a+x *.sh
+
