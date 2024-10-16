@@ -3,7 +3,6 @@ title: "RoboSats"
 version: 0.7.0.1
 release-notes: |
   * Updated to RoboSats v0.7.0-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.7.0-alpha)(client+[patch 1ba8183](https://github.com/RoboSats/robosats/issues/1373#issuecomment-2345859784))
-  * Add .local LAN interface
 license: mit
 wrapper-repo: "https://github.com/RoboSats/robosats-startos"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
