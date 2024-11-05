@@ -1,9 +1,8 @@
 id: robosats
 title: "RoboSats"
-version: 0.7.0.1
+version: 0.7.1
 release-notes: |
-  * Updated to RoboSats v0.7.0-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.7.0-alpha)(client+[patch 1ba8183](https://github.com/RoboSats/robosats/issues/1373#issuecomment-2345859784))
-  * Add .local LAN interface
+  * Updated to RoboSats v0.7.1-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.7.1-alpha)
 license: mit
 wrapper-repo: "https://github.com/RoboSats/robosats-startos"
 upstream-repo: "https://github.com/Reckless-Satoshi/robosats"
@@ -61,10 +60,10 @@ interfaces:
       # Port mappings are from the external port to the internal container port
       port-mapping:
         80: "12596"
-    lan-config:
-      443:
-        ssl: true
-        internal: 12596
+    #lan-config:
+    #  443:
+    #    ssl: true
+    #    internal: 12596
     # Port mappings are from the external port to the internal container port
     # Denotes if the service has a user interface to display
     ui: true
