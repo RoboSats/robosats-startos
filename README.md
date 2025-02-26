@@ -59,7 +59,7 @@ Now you are ready to build your **robosats** service
 Clone the project locally. 
 
 ```
-git clone https://github.com/kn0wmad/robosats-wrapper.git
+git clone https://github.com/Start9Labs/robosats-startos.git
 cd robosats-wrapper
 ```
 
