@@ -1,14 +1,14 @@
 id: robosats
 title: "RoboSats"
-version: 0.7.4
+version: 0.7.5
 release-notes: |
-  * Updated to RoboSats v0.7.4-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.7.4-alpha)
+  * Updated to RoboSats v0.7.5-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.7.5-alpha)
 license: mit
 wrapper-repo: "https://github.com/Start9Labs/robosats-startos"
 upstream-repo: "https://github.com/RoboSats/robosats"
 support-site: "https://github.com/Start9Labs/robosats-startos/issues"
-marketing-site: "https://learn.robosats.com/"
-donation-url: "https://learn.robosats.com/contribute/donate/"
+marketing-site: "https://learn.robosats.org/"
+donation-url: "https://robosats.org/contribute/donate/"
 # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
 build: ["make"]
 # Human readable descriptors for the service. These are used throughout the StartOS user interface, primarily in the marketplace.
