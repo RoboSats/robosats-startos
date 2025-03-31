@@ -14,7 +14,6 @@ install: $(PKG_ID).s9pk
 	start-cli package install $(PKG_ID).s9pk
 
 clean:
-	docker run --rm -it -v "$(shell pwd)"/configurator:/home/rust/src messense/rust-musl-cross:x86_64-musl cargo clean -q
 	rm -rf docker-images
 	rm -f image.tar
 	rm -f $(PKG_ID).s9pk
