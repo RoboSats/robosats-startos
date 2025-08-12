@@ -1,9 +1,11 @@
 id: robosats
 title: "RoboSats"
-version: 0.8.0
+version: 0.8.1
 release-notes: |
-  * Updated to RoboSats v0.8.0-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.8.0-alpha)
-  * Enable LAN access to RoboSats web interface
+  * Updated to RoboSats v0.8.1-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.8.1-alpha)
+  * Brand new mobile view
+  * New in-app private notifications system using nostr
+  * Revertible payments warning
 license: mit
 wrapper-repo: "https://github.com/Start9Labs/robosats-startos"
 upstream-repo: "https://github.com/RoboSats/robosats"
