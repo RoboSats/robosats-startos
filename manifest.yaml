@@ -1,11 +1,14 @@
 id: robosats
 title: "RoboSats"
-version: 0.8.1
+version: 0.8.4
 release-notes: |
-  * Updated to RoboSats v0.8.1-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.8.1-alpha)
-  * Brand new mobile view
-  * New in-app private notifications system using nostr
-  * Revertible payments warning
+  * Updated to RoboSats v0.8.4-alpha [Release Notes](https://github.com/RoboSats/robosats/releases/tag/v0.8.4-alpha)
+  * Payment methods input clears when switched to Swap @aftermath2
+  * API errors are globally displayed in a toast message @keshav0479
+  * Bond displays bellow Premium in mobile view @keshav0479
+  * Orders are automatically sorted by premium when filtering by SELL / BUY type @FedericoLuque
+  * Bond amount in sats estimated prior to order creation @FedericoLuque
+
 license: mit
 wrapper-repo: "https://github.com/Start9Labs/robosats-startos"
 upstream-repo: "https://github.com/RoboSats/robosats"
