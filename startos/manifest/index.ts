@@ -3,10 +3,10 @@ import i18n from './i18n'
 
 export const manifest = setupManifest({
   id: 'robosats',
-  title: 'Robosats',
-  license: 'AGPL-V3',
+  title: 'RoboSats',
+  license: 'AGPL-3.0',
   packageRepo: 'https://github.com/Start9-Community/robosats-startos',
-  upstreamRepo: 'https://github.com/Reckless-Satoshi/robosats',
+  upstreamRepo: 'https://github.com/RoboSats/robosats',
   marketingUrl: 'https://learn.robosats.com/',
   donationUrl: 'https://learn.robosats.com/contribute/donate/',
   description: i18n.description,
@@ -15,7 +15,7 @@ export const manifest = setupManifest({
     robosats: {
       source: {
         dockerTag:
-          'recksato/robosats-client:v0.8.7-alpha@sha256:87b377ac3bde6fb5067fa64fd31ffbcf8861167f0e0a7f1d0d9bcc3c38cc75cb',
+          'recksato/robosats-client:v0.8.8-alpha@sha256:22efbf7d7e88b83878d9f57f7335d81c24e657b4add183af812db462ec012f15',
       },
       arch: ['x86_64', 'aarch64'],
     },

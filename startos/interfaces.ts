@@ -8,7 +8,7 @@ export const uiInterfaceId = 'ui'
 
 export const setInterfaces = sdk.setupInterfaces(async ({ effects }) => {
   const uiMulti = sdk.MultiHost.of(effects, uiHostId)
-  // Robosats serves its own TLS on `port`, with a self-signed cert.
+  // RoboSats serves its own TLS on `port`, with a self-signed cert.
   const uiMultiOrigin = await uiMulti.bindPort(port, {
     protocol: 'https',
     addSsl: { upstreamCertValidation: 'disable' },
@@ -16,7 +16,7 @@ export const setInterfaces = sdk.setupInterfaces(async ({ effects }) => {
   const ui = sdk.createInterface(effects, {
     name: i18n('Web UI'),
     id: uiInterfaceId,
-    description: i18n('The web interface of Robosats'),
+    description: i18n('The web interface of RoboSats'),
     type: 'ui',
     masked: false,
     schemeOverride: null,
